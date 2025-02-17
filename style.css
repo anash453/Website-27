@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+  
+  }
+  
+  body {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #888;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  nav{
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    position: relative;
+    height: 83px;
+    /* position: fixed;
+    width: 100%; */
+  }
+  
+  .logo{
+    color: #fff;
+    padding: 20px 0;
+    text-align: left;
+  }
+  img {
+    width: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 25px;
+    background-color: #fff;
+    border: 1px solid #EBEBEB;
+  }
+  
+  nav ul li a:hover{
+    background-color: rgb(18, 180, 18);
+    color: #fff;
+  }
+  .menu-icon{
+    display: none;
+  }
+  
+  .menu-icon i{
+    color: #a5a7ae;
+    font-size: 18px;
+    border: 1px solid #78829b;
+    padding: 5px 11px;
+    border-radius: 4px;
+    background-color: #d0d1d5;
+  }
+  nav.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); 
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  }
+  @media (max-width:768px) {
+    nav ul{
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: #F8F8F8;
+        gap: 0;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 0px;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+    nav ul li a{
+      text-decoration: none;
+      color: #78829b;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 0 0;
+      border-radius: 25px;
+      background-color: transparent;
+      margin-left: 10px;
+    }
+    
+    nav ul{
+      align-items: normal;
+    }
+  }
+  
+  
+ 
+
+  @media(max-width: 991px) {
+    nav{
+      background: #fff;
+      padding: 0px 20px;
+    }
+    nav ul li a{
+      border: 1px solid #f2e9e9;
+    }
+    nav ul{
+      gap: 10px;
+    }
+    .content-top {
+        display: none;
+    }
+  }
+  
+  @media (max-width:768px){
+
+    nav ul li a{
+      border: none;
+    }
+    nav ul li a:hover{
+      background-color: transparent;
+      color: #78829b;
+    }
+  }
+
+  /* .main-wrapper {
+    padding-top: 60px;
+} */
+.hightlight-content {
+    min-height: 610px;
+    background-color: #f8f8f8;
+    padding: 80px 0 0;
+    text-align: center;
+    color: #fff;
+}
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  
+  @media (min-width: 995px) {
+    .container {
+      width: 970px;
+    }
+  }
+  
+  @media (min-width: 1201px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+h1, .h1 {
+    font-size: 36px;
+}
+a {
+    color: #636363;
+    text-decoration: none;
+}
+img {
+    width: auto;
+    max-width: 100%;
+}
+.hightlight-content .des-theme-info {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #222;
+    margin-top: 25px;
+}
+.hightlight-content .device-info {
+    position: relative;
+    bottom: -44px;
+}
+/* write a media quary */
+@media (max-width: 768px) {
+  .hightlight-content .des-theme-info {
+    font-size: 18px;
+  }
+}
+
+.description-device {
+  text-align: center;
+  padding: 60px 0px;
+}
+.description-device .txt-des {
+  margin-bottom: 40px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.description-device .button-des {
+  margin: 0;
+}
+.description-device .button-des li {
+  display: inline-block;
+  margin: 0 4px;
+}
+.description-device .button-des li a {
+  display: inline-block;
+  width: 157px;
+  height: 52px;
+  text-transform: uppercase;
+  line-height: 52px;
+  background-color: #e84c3d;
+  transition: .2s;
+  color: #fff;
+  font-size: 14px;
+}
+.description-device .button-des li:last-child a {
+  background-color: #000000;
+}
+.feature-wrapper.key-feature, .feature-wrapper.demo-header {
+  background-color: #f8f8f8;
+  padding-top: 50px;
+}
+.feature-info .title-feature {
+  text-align: center;
+}
+.key-feature .feature-info .title-feature .des-feature {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #707070;
+}
+.key-feature .feature-info .title-feature h2 {
+  font-size: 42px;
+  margin-top: -4px;
+  line-height: 98%;
+}
+.feature-info .title-feature h2 {
+  font-family: Lato;
+  font-size: 28px;
+  color: #222;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.title-second {
+  border-bottom: 1px solid #434343;
+  margin-bottom: 54px;
+  text-align: center;
+}
+.title-second span {
+  background: #f8f8f8 none repeat scroll 0 0;
+  bottom: -12px;
+  color: #beae59;
+  display: inline-block;
+  font-size: 18px;
+  padding: 0 10px;
+  position: relative;
+  text-transform: uppercase;
+}
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.key-feature .list-feature .item-feature {
+  box-shadow: 0 1px 2px #ccc;
+  -webkit-box-shadow: 0 1px 2px #ccc;
+  padding: 25px 10px 40px;
+  background-color: #fff;
+  margin-bottom: 35px;
+  position: relative;
+  min-height: 162px;
+}
+.key-feature .list-feature .item-feature .icon-feature {
+  width: 92px;
+  text-align: center;
+  float: left;
+  padding-top: 15px;
+}
+.key-feature .list-feature .item-feature .info-feature {
+  margin-left: 100px;
+}
+.key-feature .list-feature .item-feature .info-feature h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #beae59;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.key-feature .list-feature .item-feature .info-feature p {
+  margin: 0;
+  font-size: 12px;
+  color: #666666;
+}
+.row3{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+/* write a media quary */
+@media (max-width: 992px) {
+  .row3 {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width: 768px) {
+  .row3 {
+    grid-template-columns: repeat(1,1fr);
+    padding: 0 20px;
+  }
+}
