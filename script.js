@@ -1,3 +1,4 @@
+// https://preview.themeforest.net/item/furnicom-responsive-magento-2-and-19-furniture-theme/full_screen_preview/15798823?_ga=2.187849261.401728789.1739171660-993370187.1728848196
 let menuList = document.getElementById("menuList")
         menuList.style.maxHeight = "0px";
 
